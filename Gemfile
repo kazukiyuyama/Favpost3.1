@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'devise', '~> 3.4.0'
 #twitter認証
+gem 'twitter'
 gem 'omniauth'
 gem 'omniauth-twitter'
 
@@ -51,7 +53,6 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'devise', '~> 3.4.0'
 end
 
 group :development do
