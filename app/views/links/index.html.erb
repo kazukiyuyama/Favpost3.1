@@ -1,29 +1,29 @@
-<p id="notice"><%= notice %></p>
+<% @links.each do |link| %>
 
-<h1>Listing Links</h1>
+    <div class="thumbnail-images">
+      <%= link_to image_tag(link.avatar.url(:thumb), alt: "Thumbnail"),
+                  link_path(id: link.id) %>
+    </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <div class="link row clearfix">
 
-  <tbody>
-    <% @links.each do |link| %>
-      <tr>
-        <td><%= link.title %></td>
-        <td><%= link.url %></td>
-        <td><%= link_to 'Show', link %></td>
-        <td><%= link_to 'Edit', edit_link_path(link) %></td>
-        <td><%= link_to 'Destroy', link, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <h2>
+        <div class="btn-group">
+          <%= link_to like_link_path(link), method: :put, class: "btn btn-default btn-sm" do %>
+              <span class="glyphicon glyphicon-chevron-up"></span><br>
+              <%= link.votes_size %>
+          <% end %>
+        </div>
+        <%= link_to link.title, link_path(id: link.id) %><br>
+      </h2>
 
-<br>
+      <h3>
+        <%= link.comment %><br>
+      </h3>
 
-<%= link_to 'New Link', new_link_path %>
+    </div>
+
+    <div style="clear: both;"></div>
+    <hr>
+
+<% end %>

@@ -1,0 +1,105 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar{
+  background-color:#F75050;
+}
+
+
+
+#logo {
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding: 15px 0;
+  background-color:#F75050;
+
+  a {
+    color: white;
+  }
+}
+
+
+#main_content {
+  #content {
+    float: none;
+  }
+  padding-bottom: 100px;
+  .link {
+    padding: 2em 1em;
+//    border-bottom: 1px solid #e9e9e9;
+    width: 73%;
+    float: right;
+    .title {
+
+      a {
+        color: #FF4500;
+      }
+    }
+  }
+  .comments_title {
+    margin-top: 2em;
+  }
+//  #comments {
+//    .comment {
+//      padding: 1em 0;
+//      border-top: 1px solid #E9E9E9;
+//      .lead {
+//        margin-bottom: 0;
+//      }
+//    }
+//  }
+  .thumbnail-images{
+    width: 25%;
+    float: left;
+    img{
+      width: 200px;
+      height: 150px;
+      margin-top: 25px;
+      border: 2px #357ebd solid;
+    }
+  }
+}
+
+
+
+//signup twitter認証
+.twitter{
+background-color:#55acee;
+padding:8px 24px;
+color:#ffffff;
+display:inline-block;
+opacity:0.8;
+
+}
+.fa{margin-right:5px;}
+
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+.fa-inverse {
+  color: #ffffff;
+}
+.fileinput>div>img {
+  border: 2px #357ebd solid;
+  width: 200px;
+  height: 150px;
+}
+.profile-image>.fileinput>div>img{
+  width: 120px;
+  height: 100px;
+}
+.navbar-right>li>img, .comment-p >img{
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+  border-radius: 50%;
+}
+.comment-p >img{
+  margin-right: 15px;
+  border: 1.5px #357ebd solid;
+}
+
+
