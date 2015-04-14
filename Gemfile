@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'devise', '~> 3.4.0'
 #twitter認証
-gem 'twitter'
 gem 'omniauth'
 gem 'omniauth-twitter'
 
