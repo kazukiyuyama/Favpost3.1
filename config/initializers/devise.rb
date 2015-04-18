@@ -230,7 +230,7 @@ Devise.setup do |config|
   config.sign_out_via = :delete
 
   # require 'omniauth-twitter'
-  config.omniauth :twitter, "G55ZeRuuleSm85gMUSDU4e3gO", "8skZxTU2VywKx68rkru68v0OzqCywMKw4RXh07ROeo2BroPdZT"
+  config.omniauth :twitter, "API_KEY", "API_SECRET"
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
