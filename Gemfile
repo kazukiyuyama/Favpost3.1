@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'rmagick'
+#ページネーション
+gem 'kaminari'
 gem 'devise', '~> 3.4.0'
 #twitter認証
 gem 'omniauth'
@@ -15,7 +18,7 @@ gem 'bootstrap-sass', '~> 3.2.0.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -46,7 +49,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
+ 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
@@ -55,12 +58,11 @@ group :development, :test do
 end
 
 group :development do
-
+  gem 'sqlite3'
   gem 'better_errors' # Better Errors本体
   gem 'binding_of_caller' # Better Errors上でREPLを使用するためのgem
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end

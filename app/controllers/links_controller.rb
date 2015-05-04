@@ -11,6 +11,7 @@ class LinksController < ApplicationController
   # GET /links.json
   def index
     @links = Link.all.order('votes_size DESC')
+    @links = Link.page(params[:page])
   end
 
   # GET /links/1

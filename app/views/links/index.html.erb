@@ -1,3 +1,9 @@
+<% if false %>
+ここはコメントアウト。コメントアウト外すと総表示数が表示される
+<%= page_entries_info @links %>
+<% end %>
+
+
 <% @links.each do |link| %>
 
     <div class="thumbnail-images">
@@ -25,5 +31,7 @@
 
     <div style="clear: both;"></div>
     <hr style="margin-top:0px;">
+   
 
 <% end %>
+<%= paginate @links %>
