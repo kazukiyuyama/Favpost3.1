@@ -1,6 +1,34 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+ol {
+  counter-reset: number;
+  /* 名前を付けたカウンターをリセット */
+  list-style: none;
+  /* olが数字を付けることをキャンセル */
+  margin: 0;
+  padding: 0;
+  li {
+    /* リスト部分は好きに装飾！ */
+    &:before {
+      /* カウンタ（数字になる部分） */
+      counter-increment: number;
+      /* 任意の名前を付けて！ */
+      content: counter(number);
+      /* 名前を付けたカウンターを呼び出し */
+      /* 色を変えたり、背景画像を敷いたり！自由自在！ */
+      float: left;
+      background: #F75050;
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      line-height: 2;
+    }
+  }
+}
+
 .navbar{
   background-color:#F75050;
 }

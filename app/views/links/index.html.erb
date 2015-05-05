@@ -3,13 +3,16 @@
 <%= page_entries_info @links %>
 <% end %>
 
-
+<ol>
 <% @links.each do |link| %>
+<li>
+
 
     <div class="thumbnail-images">
       <%= link_to image_tag(link.avatar.url(:thumb), alt: "Thumbnail"),
                   link.url %>
     </div>
+
 
     <div class="link row clearfix">
 
@@ -32,6 +35,8 @@
     <div style="clear: both;"></div>
     <hr style="margin-top:0px;">
    
-
+</li>
 <% end %>
+</ol>
+
 <%= paginate @links %>
