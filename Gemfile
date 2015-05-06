@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 gem 'rmagick'
 #ページネーション
 gem 'kaminari'
