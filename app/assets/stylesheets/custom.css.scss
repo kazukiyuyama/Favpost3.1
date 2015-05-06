@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.fb-page{
+  float:left;
+}
+
 ol {
   counter-reset: number;
   /* 名前を付けたカウンターをリセット */
@@ -38,7 +42,7 @@ ol {
 .navbar1{
   background-color:#F75050;
   height:200px;
-  text-align:center;
+ 　right: 50%;
   color: #FFFFFF;
 
 }
